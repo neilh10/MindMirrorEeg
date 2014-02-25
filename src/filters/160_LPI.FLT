@@ -1,0 +1,50 @@
+FILTER COEFFICIENT FILE
+IIR DESIGN
+FILTER TYPE                 LOW PASS                      
+ANALOG FILTER TYPE          INVERSE TSCHEBYSCHEFF         
+PASSBAND RIPPLE IN -dB           -1.0000
+STOPBAND RIPPLE IN -dB          -40.0000
+PASSBAND CUTOFF FREQUENCY    .950000E+01 HERTZ              
+STOPBAND CUTOFF FREQUENCY    .160000E+02 HERTZ              
+SAMPLING FREQUENCY           .640000E+02 HERTZ              
+FILTER DESIGN METHOD: BILINEAR TRANSFORMATION       
+FILTER ORDER            6 0006h
+NUMBER OF SECTIONS      3 0003h
+NO. OF QUANTIZED BITS  16 0010h
+QUANTIZATION TYPE - FRACTIONAL FIXED POINT
+COEFFICIENTS SCALED FOR CASCADE FORM I
+          0 00000000     /* shift count for overall gain */
+      32767 00007FFF     /* overall gain                 */
+          0 00000000     /* shift count for section  1 values             */
+       6887 00001AE7     /* section  1 coefficient B0                     */
+      11004 00002AFC     /* section  1 coefficient B1                     */
+       6887 00001AE7     /* section  1 coefficient B2                     */
+       9766 00002626     /* section  1 coefficient A1                     */
+      -1777 FFFFF90F     /* section  1 coefficient A2                     */
+          0 00000000     /* shift count for section  2 values             */
+      11251 00002BF3     /* section  2 coefficient B0                     */
+       2032 000007F0     /* section  2 coefficient B1                     */
+      11251 00002BF3     /* section  2 coefficient B2                     */
+      18534 00004866     /* section  2 coefficient A1                     */
+     -10303 FFFFD7C1     /* section  2 coefficient A2                     */
+          0 00000000     /* shift count for section  3 values             */
+      17085 000042BD     /* section  3 coefficient B0                     */
+      -7441 FFFFE2EF     /* section  3 coefficient B1                     */
+      17085 000042BD     /* section  3 coefficient B2                     */
+      29848 00007498     /* section  3 coefficient A1                     */
+     -23810 FFFFA2FE     /* section  3 coefficient A2                     */
+   .2101745605468750D+00 3FCAE70000000000  .21017990E+00 /* section  1 B0 */
+   .3358154296875000D+00 3FD57E0000000000  .33583694E+00 /* section  1 B1 */
+   .2101745605468750D+00 3FCAE70000000000  .21017990E+00 /* section  1 B2 */
+   .2980346679687500D+00 3FD3130000000000 -.29804473E+00 /* section  1 A1 */
+  -.5422973632812500D-01 BFABC40000000000  .54241462E-01 /* section  1 A2 */
+   .3433532714843750D+00 3FD5F98000000000  .34337722E+00 /* section  2 B0 */
+   .6201171875000000D-01 3FAFC00000000000  .62041591E-01 /* section  2 B1 */
+   .3433532714843750D+00 3FD5F98000000000  .34337722E+00 /* section  2 B2 */
+   .5656127929687500D+00 3FE2198000000000 -.56563645E+00 /* section  2 A1 */
+  -.3144226074218750D+00 BFD41F8000000000  .31443248E+00 /* section  2 A2 */
+   .5213928222656250D+00 3FE0AF4000000000  .52142026E+00 /* section  3 B0 */
+  -.2270812988281250D+00 BFCD110000000000 -.22710356E+00 /* section  3 B1 */
+   .5213928222656250D+00 3FE0AF4000000000  .52142026E+00 /* section  3 B2 */
+   .9108886718750000D+00 3FED260000000000 -.91089480E+00 /* section  3 A1 */
+  -.7266235351562500D+00 BFE7408000000000  .72663176E+00 /* section  3 A2 */

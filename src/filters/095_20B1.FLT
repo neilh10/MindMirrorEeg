@@ -1,0 +1,39 @@
+FILTER COEFFICIENT FILE
+IIR DESIGN
+FILTER TYPE                 BAND PASS                     
+ANALOG FILTER TYPE          BUTTERWORTH                   
+PASSBAND RIPPLE IN -dB           -3.0000
+STOPBAND RIPPLE IN -dB          -40.0000
+PASSBAND CUTOFF FREQUENCIES  .950000E+01  .115000E+02 HERTZ              
+STOPBAND CUTOFF FREQUENCIES  .420000E+01  .211000E+02 HERTZ              
+SAMPLING FREQUENCY           .640000E+02 HERTZ              
+FILTER DESIGN METHOD: BILINEAR TRANSFORMATION       
+FILTER ORDER            4 0004h
+NUMBER OF SECTIONS      2 0002h
+NO. OF QUANTIZED BITS  16 0010h
+QUANTIZATION TYPE - FRACTIONAL FIXED POINT
+COEFFICIENTS SCALED FOR CASCADE FORM I
+          1 00000001     /* shift count for overall gain */
+      16384 00004000     /* overall gain                 */
+          0 00000000     /* shift count for section  1 values             */
+       2209 000008A1     /* section  1 coefficient B0                     */
+          0 00000000     /* section  1 coefficient B1                     */
+      -2209 FFFFF75F     /* section  1 coefficient B2                     */
+      27763 00006C73     /* section  1 coefficient A1                     */
+     -28348 FFFF9144     /* section  1 coefficient A2                     */
+          1 00000001     /* shift count for section  2 values             */
+       2055 00000807     /* section  2 coefficient B0                     */
+          0 00000000     /* section  2 coefficient B1                     */
+      -2055 FFFFF7F9     /* section  2 coefficient B2                     */
+      17632 000044E0     /* section  2 coefficient A1                     */
+     -14341 FFFFC7FB     /* section  2 coefficient A2                     */
+   .6741333007812500D-01 3FB1420000000000  .67443228E-01 /* section  1 B0 */
+   .0000000000000000D+00 0000000000000000  .00000000E+00 /* section  1 B1 */
+  -.6741333007812500D-01 BFB1420000000000 -.67443228E-01 /* section  1 B2 */
+   .8472595214843750D+00 3FEB1CC000000000  .84727228E+00 /* section  1 A1 */
+  -.8651123046875000D+00 BFEBAF0000000000 -.86513923E+00 /* section  1 A2 */
+   .6271362304687500D-01 3FB00E0000000000  .12545923E+00 /* section  2 B0 */
+   .0000000000000000D+00 0000000000000000  .00000000E+00 /* section  2 B1 */
+  -.6271362304687500D-01 BFB00E0000000000 -.12545923E+00 /* section  2 B2 */
+   .5380859375000000D+00 3FE1380000000000  .10762274E+01 /* section  2 A1 */
+  -.4376525878906250D+00 BFDC028000000000 -.87534899E+00 /* section  2 A2 */

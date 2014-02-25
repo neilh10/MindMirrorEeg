@@ -1,0 +1,55 @@
+/*
+ * dim.h    -   ## Biomonitors Mind Mirror III ##
+ *
+ * Description
+ *
+ *
+ *
+ */
+#ifndef dim_h
+#define dim_h
+
+/*
+ * Constants
+ */
+#define _DimNumSnapBufs_ 3
+#define _DimNumSamplesPerPkt_ 64
+          // Njh Should the above be 32 - (x8 = 256)
+ typedef struct {
+	 char Raw[_DimNumSamplesPerPkt_];
+	 char Emg; /*maximum emg recorded */
+	 unsigned int Init : 1; /*Set to '1' when initialising packing*/
+	 unsigned int Status : 7;
+ } tDimRawPkdDataLobe; /* raw data for single lobe*/
+
+ typedef struct {
+	uchar pllu_header[sizeof(Pllt_header)-1];/*Reserved for header */
+	uchar dllu_header[sizeof(Dllt_header)-1];/*Reserved for header */
+	tDimRawPkdDataLobe Lobe[NUMBER_LOBES];
+} tDimRawPkdData;
+
+#define eDimdType enum eDimType
+ enum eDimType {_DimSnap_, /* Snap shot */
+	 _DimStart_,/* Start of new buffer */
+	 _DimInit_ /*Initialise Functions */
+ };
+
+/*
+ * Module Prototypes
+ */
+ void DimSnapRaw(eDimdType Type);
+ tDimRawPkdData *DimRtrvSnapRaw(void);
+
+
+#endif /* dim_h */
+
+
+
+
+
+
+
+
+
+
+
